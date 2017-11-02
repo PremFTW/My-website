@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+
+<!-- HTML way of making comments -->
+
+<html>
+<head>
+<title>PremFTW</title>
+<link rel="stylesheet" href="main.css">
+</head>
+
+<style>
+body
+{
+  background-color: #db4a15;
+  color: #FFFFFF;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+
+
+<h1><center>Prems Website<center></h1>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openSection('Home')">Home</button>
+    <button class="tablinks" onclick="openSection('Gallery')">Gallery</button>
+  </div>
+
+  <div id="Home" class="tabcontent">
+    <h2>About Me</h2>
+
+    <p>Hi, Welcome to my website. I am Prem and I am a sixteen year that loves to create many different type of things arts and some other cool stuff. I have been doing origami since I was little but, I all of the other drawing and 3D models are somethings that I just started to do. In this website's gallery section you can find all of my artwork that I have completed, artwork I am currently working on, and future artworks I have in my mind.</p>
+
+    <img src="FullSizeRender (4).jpg" alt="OrigamiMo">
+  </div>
+
+  <div id="Gallery" class="tabcontent">
+    <h2> Welcome to my gallery </h2>
+
+    <p> Hey, Welcome to my Gallery! This is pretty much the core of this website. I have many artworks currently post so, feel free to check them out and I will be updating the gallery with new pictures every week as I finish new projects.</p>
+
+    <img src="FullSizeRender (3).jpg">
+    <p> Origami Yatagarasu </p>
+    <img src="FullSizeRender (2).jpg">
+    <p> Origami LyreBird </p>
+    <img src="FullSizeRender.jpg">
+    <p> Origami Eagle </p>
+
+
+
+</body>
+</html>
